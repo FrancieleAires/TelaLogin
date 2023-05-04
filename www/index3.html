@@ -8,26 +8,26 @@
         <script src="components/main.js"></script>
     <link rel="stylesheet" href="css/style.css" >
     <script>
-    </script>>
+    </script>
 </head>
-<body>
+<body onload="exibir()">
     <!--Container da tela de login-->
     <div class="container">
-        <h2>Cadastre-se</h2>
+        <h2 id="errado">Seu e-mail ou senha estão incorretos, por favor, tente novamente.</h2>
         
         <!--Inicio do formulario-->
             <div class="input-field">
-                <input type="text" id="email" placeholder="alguma coisa">
+                <input type="text" id="gmail" placeholder="alguma coisa">
                 <label for="nome">Nome:</label>
             </div>
 
             <div class="input-field">
-                <input type="password" id="senha" placeholder="alguma coisa">
+                <input type="password" id="password" placeholder="alguma coisa">
                 <label for="senha">Senha:</label>
             </div>
 
             <div class="center">
-                <button onclick="cadastrar();location.href='index2.html';">Entrar</button>
+                <button onclick="exibir();location.href='index3.html';">Entrar</button>
             </div>
         
     </div>
